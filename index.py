@@ -8,5 +8,13 @@ CORS(app)
 
 @app.route("/analyze", methods=['POST'])
 def analyze():
+	# Berisi 13 attribute yang akan digunakan untuk kalkulasi
 	attributes = request.data
-	return jsonify(5)
+
+	#
+	# Kode utama disini
+	#
+
+	# Hasil akhir
+	result = 4
+	return jsonify(result)
